@@ -1,0 +1,38 @@
+body {background-color: black; 
+    color: white;
+    text-align: center;}
+
+h1 {font-size: 4em;
+    display: flex;
+    text-align: center;}
+
+p {color: gray;}
+
+li {color: gray;}
+
+.logo {float: right;
+    height: 75px;}
+
+.resize {height: 400px;
+    width: auto;}
+
+.centerText {text-align: center;}
+
+.imageCenter {display: flex;
+    align-content: center;}
+
+.imageLeft {display: flex;
+    align-content: left;}
+
+.imageRight {display: flex;
+    align-content: right;}
+
+button {border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    align-content: center;
+    background-color: darkred;
+    border-color: darkred;
+    color: whitesmoke;
+    font-size: 2em}
