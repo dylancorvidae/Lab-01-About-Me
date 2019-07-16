@@ -38,9 +38,9 @@ quizButton.onclick = function() {
     // get the text response from the user
     const child = prompt('Does Dylan have a child to return home to? (Y/N)');
     
-    // convert to boolean
-
     let correctAnswers = 0;
+
+    // convert to boolean
     if(isYes(child) === true) {
         correctAnswers += 1;
     } 
