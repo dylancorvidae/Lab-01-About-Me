@@ -6,33 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lab 01 About Me</title>
     <link rel="stylesheet" href="src/main.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Welcome to the Corvidae Familae</h1>
     <h2>My Flock</h2>
     <p class = "centerText">
-        <img class="resize" src="assets/kaon.jpg" align="left" alt="Kaon and I"/>
-        <img class="resize" src="assets/goddexxes.jpg" align="right" alt="Bentley and I"/>
+        <img class="resize" src="assets/kaon.jpg" class="left" alt="Kaon and I"/>
+        
         Hi, I'm Dylan Corvidae. To the left is my child Kaon. To the right is my partner 
         Bentley. Below is my partner Elizabeth.
-    
+        <img class="resize" src="assets/goddexxes.jpg" class="right" alt="Bentley and I"/>
         <br><img class="resize" class="imageCenter" src="assets/gothic.jpg" alt="Elizabeth and I"/></p>
         <br>
     <h2>Circus</h2>
     <p class = "centerText">I am a circus performer
-        <img class="resize" src="assets/wolftrap.jpg" align="left" alt="Bentley and I in birds nest neck hang"/>
-        <img class="resize" src="assets/tripletrap.jpg" align="right" alt="Bentley, Larke, and I on a single static trapeze"/>
+        <img class="resize" src="assets/wolftrap.jpg" class="left" alt="Bentley and I in birds nest neck hang"/>
+        
         <ul class="centerText">
             <li>Duo Dance Trapeze</li>
             <li>Trio Static Trapeze</li>
             <li>Burlesque Chair Dance</li>
             <li>Handbalancing</li>
         </ul>
+        <img class="resize" src="assets/tripletrap.jpg" class="right" alt="Bentley, Larke, and I on a single static trapeze"/>
         <br><img class="resize" class="imageCenter" src="assets/humanscale.jpg" alt="Bentley and I performing a human scale"/>
     </p>
     <br>
     <h2>Music</h2>
-    <p><img class="resize" src="assets/sandman.jpg" align="left" alt="Me playing 12 string acoustic guitar with Bentley performing on lyra"/>I play a lot of different instruments. I started out playing trumpet in elementary school.  
+    <p><img class="resize" src="assets/sandman.jpg" class="left" alt="Me playing 12 string acoustic guitar with Bentley performing on lyra"/>I play a lot of different instruments. I started out playing trumpet in elementary school.  
         then in high school I picked up a guitar and never looked back. In college I started composing electronic music 
         and had to start learning piano. I can play bass, but I play bass like a guitarist. I love to 
         experiment with sound, hence I own many effects pedals. I play guitar with a cello bow, 
@@ -41,7 +43,7 @@
     </p>
     <br>
 <h2>Animal Friends</h2>
-    <p><img class="resize" src="assets/spacecat.jpg" align="right" alt="Space Cat"/>There are 4 cats that cohabitat with my flock.  
+    <p><img class="resize" src="assets/spacecat.jpg" class="right" alt="Space Cat"/>There are 4 cats that cohabitat with my flock.  
         <ol>
             <li>Space Cat</li>
             <li>Ender</li>
@@ -50,7 +52,13 @@
         </ol>
     </p>
     <br>
-<button id="quizButton">QUIZ</button>
+    <h2>Quiz Time!</h2>
+    <p>Dylan was sucked into the computer through the use of black 
+        code magic they don't understand. Can you save them and return 
+        them to their family?</p>
+<button id="quizButt">Let's<br>do<br>this!</button>
+<p id="quizResult">Please take the quiz to save Dylan!</p>
     <footer><p>Authored by Dylan Corvidae &copy;</p></footer>
+    <script type="module" src="src/app.js"></script>
 </body>
 </html>
