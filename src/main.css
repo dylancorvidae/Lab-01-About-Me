@@ -8,7 +8,7 @@ h1 {font-family: 'DM Serif Text', serif;;
     display: flex;
     text-align: center;}
 
-h2 {font-family: 'DM Serif Text', serif;;}
+h2, h3 {font-family: 'DM Serif Text', serif;;}
 
 p {color: gray;}
 
