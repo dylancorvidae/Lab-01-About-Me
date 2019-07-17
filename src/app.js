@@ -18,9 +18,9 @@ let triesLeft = 3;
 // Event Handlers
 guessB.addEventListener('click', function (event) {
     event.preventDefault();
-    guess --;
+    triesLeft --;
 const userGuess = parseInt(guess.value)
-const result = compareNumbers(userguess, correctNum)
+const result = compareNumbers(userGuess, correctNum)
 
 if (result === 0) {
     res.textContent = 'YAY!!!'
@@ -55,6 +55,6 @@ if (result === 0) {
 //What to do if out of tries run out
 
     // if (triesLeft === 0){
-    //     quizRes += 'Oh No!',
-    //     quizRes1 += 'Gauss the goose has been degaussed.'
+    //     quizRes.textContent = 'Oh No!',
+    //     quizRes1.textContent = 'Gauss the goose has been degaussed.'
     // };
