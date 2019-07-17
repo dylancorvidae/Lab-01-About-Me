@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess A Number</title>
+    <link rel="stylesheet" href="src/main.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="centerText">Guess Goose Gauss</h1>
+        <nav>
+            <a href="./">Home</a>
+            <a href="./guess.html">Guessing Game</a>
+        </nav>
+        </header>
+    <main>
+        <p>
+            A local JavaScript hooligan has taken Dylan's favorite goose Gauss. Dylan saw the hooligan running away 
+            from the family pond with a sack trailing feathers behind them. Dylan chased the hooligan 
+            into a local canyon that has 20 separate trails leading to different caves. Which trail do you 
+            think the hooligan followed? Pick a number to try and help Dylan recover their beloved Gauss. It is currently
+            3 in the afternoon so Dylan only has time to check 3 different caves before the local dinnertime. Help
+            them save Gauss before the goose has been degaussed. 
+        </p>
+        <p>
+            <input type="number" min="0" max="20" class="inputGuess" id="guess">
+        </p>
+        <p>
+            <button id="guessButt">Let's check this one!</button>   
+        </p>
+        <p id="quizRes1">
+                Did you find the hooligan? <span id="hooliganFind"></span>
+        </p>
+        <p id="quizRes2">
+                You have <span id="triesLeft"></span> tries left.
+        </p>
+        <p id="quizRes3">
+                The trail was too high or two low? <span id="hooliganFind"></span>
+        </p>
+    </main>
+
+    <footer><p>Authored by Dylan Corvidae &copy;</p></footer>
+    <script type="module" src="src/app.js"></script>
+</body>
+</html>

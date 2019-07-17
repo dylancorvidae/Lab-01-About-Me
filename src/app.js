@@ -1,14 +1,14 @@
 /* eslint-disable no-console */
-import isYes from './is-yes.js';
+import whichTrail from './whichTrail.js';
 
 // Reference needed DOM elements
-const quizButton = document.getElementById('quizButt');
-const result = document.getElementById('quizResult');
+const guess = document.getElementById('guess');
+const result = document.getElementById('guessResult');
 
 // Initialization (setup, state variables)
 
 // Event Handlers
-quizButton.onclick = function() {
+guess.onclick = function() {
     // show the user a message. only options is "OK"
     alert('I am trapped in the computer! I want to get back to my life. To free me you must answer all questions correctly. -Dylan');
     
