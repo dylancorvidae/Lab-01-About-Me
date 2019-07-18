@@ -1,4 +1,4 @@
-//getThrowFromNumber Function
+//Return Rock Paper or Scissors
 export function getThrowFromNumber(result){
     if(result === 0){
         return 'rock';

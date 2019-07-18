@@ -1,6 +1,20 @@
-.radio-image{
-    size: 300px 300px
+label {
+    cursor: pointer;
 }
-#rock{
-    background-color: whitesmoke;
+
+input {
+    display: none;
+}
+
+.radio-image {
+    border: 5px solid transparent;
+    width: 200px;
+}
+
+input:checked + .radio-image {
+    border: 5px solid rgb(236, 28, 243);
+}
+
+#message {
+    font-size: 20px;
 }
