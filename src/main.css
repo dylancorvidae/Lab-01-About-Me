@@ -5,7 +5,6 @@ body {font-family: Helvetica;
 
 h1 {font-family: 'DM Serif Text', serif;;
     font-size: 4em;
-    display: flex;
     text-align: center;}
 
 h2, h3 {font-family: 'DM Serif Text', serif;;}

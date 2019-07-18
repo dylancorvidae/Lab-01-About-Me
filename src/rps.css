@@ -8,7 +8,7 @@ input {
 
 .radio-image {
     border: 5px solid transparent;
-    width: 200px;
+    height: 200px;
 }
 
 input:checked + .radio-image {
@@ -17,4 +17,7 @@ input:checked + .radio-image {
 
 #message {
     font-size: 20px;
+}
+#result-img{
+    height: 200px;
 }

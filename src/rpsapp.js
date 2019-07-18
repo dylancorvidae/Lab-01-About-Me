@@ -17,7 +17,7 @@ doItButton.addEventListener('click', () => {
     const rps = getThrowFromNumber();
 
     resultImg.classList.remove('invisible');
-    const src = 'assests/weapons/' + rps + '.png';
+    const src = 'assets/weapon/' + rps + '.png';
     resultImg.src = src;
 
     const sideButton = document.querySelector('input:checked');
