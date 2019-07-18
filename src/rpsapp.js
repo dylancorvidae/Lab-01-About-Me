@@ -5,6 +5,7 @@ import getThrowFromNumber from './rockPaperScissors.js';
 const doItButton = document.getElementById('do-it-button');
 const resultImg = document.getElementById('result-img');
 const message = document.getElementById('message');
+const opponentThrows = document.getElementById('opponent-throws');
 const winCount = document.getElementById('win-count');
 const lossCount = document.getElementById('loss-count');
 
@@ -17,6 +18,7 @@ doItButton.addEventListener('click', () => {
     const rps = getThrowFromNumber();
 
     resultImg.classList.remove('invisible');
+    opponentThrows.classList.remove('invisible');
     const src = 'assets/weapon/' + rps + '.png';
     resultImg.src = src;
 
