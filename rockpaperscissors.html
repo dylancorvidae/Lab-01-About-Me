@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess A Number</title>
+    <link rel="stylesheet" href="src/main.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="centerText">Rock Paper Scissors</h1>
+        <nav>
+            <a href="./">Home</a>
+            <a href="./guess.html">Guessing Game</a>
+            <a href="./rockpaperscissors.html">Rock Paper Scissors</a>
+        </nav>
+        </header>
+    <main>
+        <h2>Pick Your Weapon</h2>
+        <p>
+            <label>
+                <input type="radio" name="weapon" value="rock" checked>
+                <img class="radio-image" src="assets/weapon/rock.jpg">
+            </label>
+            <label>
+                <input type="radio" name="weapon" value="tails">
+                <img class="radio-image" src="assets/weapon/paper.jpg">
+            </label>
+            <label>
+                <input type="radio" name="weapon" value="tails">
+                <img class="radio-image" src="assets/weapon/paper.jpg">
+            </label>
+        </p>
+
+        <p>
+            <button id="flip-button">Flip</button>
+        </p>
+
+        <p id="message">
+            Make a guess to get started!
+        </p>
+
+        <p id="result">
+            <img id="coin-image" class="invisible" src="assets/sides/tails.jpg">
+        </p>
+        
+        <p id="record">
+            <span>Wins: <span class="count" id="win-count">0</span></span>
+            <span>Losses: <span class="count" id="loss-count">0</span></span>
+        </p>
+        <p>
+
+        </p>
+    </main>
+    <footer><p>Authored by Dylan Corvidae &copy;</p></footer>
+    <script type="module" src="src/rockPaperScissors.js"></script>
+</body>
+</html>

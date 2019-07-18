@@ -1,60 +1,73 @@
 /* eslint-disable no-console */
-import compareNumbers from './compareNumbers.js';
+import isYes from './is-yes.js';
 
 // Reference needed DOM elements
-let guess = document.getElementById('guess');
-const res = document.getElementById('quizRes');
-const res1 = document.getElementById('quizRes1');
-const res2 = document.getElementById('quizRes2');
-const res3 = document.getElementById('quizRes3');
-const guessB = document.getElementById('guessButt');
-
+const quizButton = document.getElementById('quizButt');
+const result = document.getElementById('quizResult');
 
 // Initialization (setup, state variables)
-const correctNum = 13;
-let triesLeft = 3;
-
 
 // Event Handlers
-guessB.addEventListener('click', function (event) {
-    event.preventDefault();
-    triesLeft --;
-const userGuess = parseInt(guess.value)
-const result = compareNumbers(userGuess, correctNum)
-
-if (result === 0) {
-    res.textContent = 'YAY!!!'
-    res1.textContent = 'Thank you so much Gauss the goose has been saved!';
+quizButton.onclick = function() {
+    // show the user a message. only options is "OK"
+    alert('I am trapped in the computer! I want to get back to my life. To free me you must answer all questions correctly. -Dylan');
+    
+    // returns: true for "OK", and false for "Cancel"
+    const confirmed = confirm('Do you want to save Dylan?');
+    if(confirmed === false) {
+        return;
     }
-    //too low, should give message to try higher and update # tries
-    else if (result === -1) {
-        res.textContent = 'You haven\'t found them'
-        res1.textContent = 'This trail was a dead end,' 
-        //update lowHigh span
-            // lowHigh = "It's too dark to well down here.  Let's try higher up."
-        
+    
+    // example of what an empty string is
+    // eslint-disable-next-line no-unused-vars
+
+    let name = '';
+    
+    // returns string entered by user, unless they cancel
+    // in which case returns null
+    const firstName = prompt('What\'s your first name?');
+    name = name + firstName;
+    // short hand for above:
+    // name += firstName;
+
+    const lastName = prompt('What\'s your last name?');
+    name = name + ' ' + lastName;
+    // short hand for above:
+    // name += lastName;
+
+    // get the text response from the user
+    const child = prompt('Does Dylan have a child to return home to? (Y/N)');
+    
+    let correctAnswers = 0;
+
+    // convert to boolean
+    if(isYes(child) === true) {
+        correctAnswers += 1;
+    } 
+
+    // get the text response from the user
+    const teeterMetal = prompt('Dylan has many interesting skills. Is Dylan the first black metal teeter board artist? (Y/N)');
+    
+    // convert to boolean
+    if(isYes(teeterMetal) === false) {
+        correctAnswers += 1;
     }
-    //too high, should give message to try lower and update # tries
-    else (result === 1); {
-        res.textContent = 'You haven\'t found them'
-        res1.textContent = 'This trail was a dead end'
-        //update lowHigh span
-            // lowHigh = 'There is too much sun to hide. Let's try lower down.'
-        
+    // get the text response from the user
+    const catName = prompt('Does Dylan have a cat named Lovecraft? (Y/N)');
+    
+    // convert to boolean
+    if(isYes(catName) === false) {
+        correctAnswers += 1;
     }
-});
+    //Responses to quiz
+    let response = 'Thank you ' + name;
 
+    if(correctAnswers === 3) {
+        response += ', you got ' + correctAnswers + ' out of 3 questions correct and have saved Dylan! They can return to their family and live their life again!';
+    }
+    else {
+        response += ' for trying to save Dylan. You got ' + correctAnswers + ' out of 3 questions correct. Please go back to train and perhaps you can rescue them in the future.';
+    }
 
-
-
-//Responses to quiz
-
-    //correct response 1st
-
-
-//What to do if out of tries run out
-
-    // if (triesLeft === 0){
-    //     quizRes.textContent = 'Oh No!',
-    //     quizRes1.textContent = 'Gauss the goose has been degaussed.'
-    // };
+    result.textContent = response;
+};
