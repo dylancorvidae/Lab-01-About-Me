@@ -27,7 +27,7 @@ doItButton.addEventListener('click', () => {
     const throwButton = document.querySelector('input:checked');
 
     let winCondition;
-    //Show Result & Tally Score
+//Show Result & Tally Score
     winCondition = compareThrows(throwButton, rps, winCondition);
     resultTally(winCondition);
 });
