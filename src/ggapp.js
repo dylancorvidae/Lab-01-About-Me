@@ -5,14 +5,14 @@ import compareNumbers from './compareNumbers.js';
 let guess = document.getElementById('guess');
 const res = document.getElementById('quizRes');
 const res1 = document.getElementById('quizRes1');
-//const res2 = document.getElementById('quizRes2');
-//const res3 = document.getElementById('quizRes3');
+let triesLeft = document.getElementById('tries-left');
+const lowHigh = document.getElementById('low-high');
 const guessB = document.getElementById('guessButt');
 
 
 // Initialization (setup, state variables)
 const correctNum = 13;
-let triesLeft = 3;
+let triesLeftNumber = 3;
 
 
 // Event Handlers
@@ -21,6 +21,7 @@ guessB.addEventListener('click', function(event) {
     triesLeft --;
     const userGuess = parseInt(guess.value);
     const result = compareNumbers(userGuess, correctNum);
+    triesLeft = triesLeftNumber.textContent('' + triesLeftNumber + '');
 
     if(result === 0) {
         res.textContent = 'YAY!!!';
@@ -31,7 +32,7 @@ guessB.addEventListener('click', function(event) {
         res.textContent = 'You haven\'t found them';
         res1.textContent = 'This trail was a dead end,';
         //update lowHigh span
-            // lowHigh = "It's too dark to well down here.  Let's try higher up."
+            // lowHigh = "It's too dark to see down here.  Let's try higher up."
         
     }
     //too high, should give message to try lower and update # tries
@@ -54,7 +55,7 @@ guessB.addEventListener('click', function(event) {
 
 //What to do if out of tries run out
 
-     if (triesLeft === 0){
-        quizRes.textContent = 'Oh No!',
-         quizRes1.textContent = 'Gauss the goose has been degaussed.'
-     };
+if(triesLeft === 0){
+    res.textContent = 'Oh No!',
+    res1.textContent = 'Gauss the goose has been degaussed.';
+}
