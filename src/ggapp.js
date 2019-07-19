@@ -12,13 +12,13 @@ const guessB = document.getElementById('guessButt');
 
 // Initialization (setup, state variables)
 const correctNum = 13;
-//let triesLeft = 3;
+let triesLeft = 3;
 
 
 // Event Handlers
 guessB.addEventListener('click', function(event) {
     event.preventDefault();
-    //triesLeft --;
+    triesLeft --;
     const userGuess = parseInt(guess.value);
     const result = compareNumbers(userGuess, correctNum);
 
@@ -54,7 +54,7 @@ guessB.addEventListener('click', function(event) {
 
 //What to do if out of tries run out
 
-    // if (triesLeft === 0){
-    //     quizRes.textContent = 'Oh No!',
-    //     quizRes1.textContent = 'Gauss the goose has been degaussed.'
-    // };
+     if (triesLeft === 0){
+        quizRes.textContent = 'Oh No!',
+         quizRes1.textContent = 'Gauss the goose has been degaussed.'
+     };
