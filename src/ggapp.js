@@ -25,7 +25,7 @@ guessB.addEventListener('click', function(event) {
         lowHigh.textContent = 'There is only one path for Gauss now, down the gullet of the goosenapper';
         guessB.disabled = true;
     }
-    
+
     gameResult(result);
 });
 
@@ -49,4 +49,3 @@ function gameResult(result) {
         lowHigh.textContent = 'There is too much sun to hide. Let\'s try lower down.';
     }
 }
-

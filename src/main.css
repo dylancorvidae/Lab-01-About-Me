@@ -1,31 +1,29 @@
 body {font-family: Helvetica;
     background-color: black; 
-    color: white;
-    text-align: center;}
+    color: white;}
 
 h1 {font-family: 'DM Serif Text', serif;;
-    font-size: 4em;
     text-align: center;}
 
-h2, h3 {font-family: 'DM Serif Text', serif;;}
+h2, h3 {font-family: 'DM Serif Text', serif;}
 
 p {color: lightgray;}
 
-li {color: lightgray;}
+ol, ul, li {color: lightgray;}
 
 .resize {height: 400px;
     width: auto;}
 
 .centerText {text-align: center;}
 
-.imageCenter {display: flex;
-    align-content: center;}
+.imgCenter {display: block;
+    margin: 0px auto;
+height: 400;
+width: auto;}
 
-.imageLeft {display: flex;
-    align-content: left;}
+.imgLeft {float: left;}
 
-.imageRight {display: flex;
-    align-content: right;}
+.imgRight {float: right;}
 
 button {
     border-radius: 100%;
@@ -38,30 +36,24 @@ button {
     color: whitesmoke;
     font-size: 1.5em;
     display: block;
-    content: ' ';
-}
+    content: ' ';}
 
 .left {
     float: left;
-    padding: 20px 20px;
-    }
+    padding: 20px 20px;}
 
 .right {
     float: right;
-    padding: 20px 20px ;
-    }
+    padding: 20px 20px ;}
 
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    }
+    width: 50%;}
 
 .hidden {
-    display: none;
-}
+    display: none;}
 
 .invisible {
-    visibility: hidden;
-}
+    visibility: hidden;}
