@@ -3,13 +3,19 @@ body {font-family: Helvetica;
     color: white;}
 
 h1 {font-family: 'DM Serif Text', serif;;
-    text-align: center;}
+    text-align: center;
+    margin: 30px;}
 
-h2, h3 {font-family: 'DM Serif Text', serif;}
+h2, h3 {font-family: 'DM Serif Text', serif;
+    margin: 20px;}
 
-p {color: lightgray;}
+p {color: lightgray;
+    margin: 10px;}
 
-ol, ul, li {color: lightgray;}
+ol, ul, li {color: lightgray;
+    margin: 10px;}
+
+img{margin:20px;}
 
 .resize {height: 400px;
     width: auto;}

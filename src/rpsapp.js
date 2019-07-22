@@ -1,7 +1,5 @@
-/* eslint-disable no-console */
 import getThrowFromNumber from './rockPaperScissors.js';
 
-//Reference needed DOM elements
 const doItButton = document.getElementById('do-it-button');
 const resultImg = document.getElementById('result-img');
 const message = document.getElementById('message');
@@ -10,12 +8,10 @@ const winCount = document.getElementById('win-count');
 const lossCount = document.getElementById('loss-count');
 const tieCount = document.getElementById('tie-count');
 
-// Initialization (setup, state variables)
 let wins = 0;
 let losses = 0;
 let ties = 0;
 
-// Event Handlers
 doItButton.addEventListener('click', () => {
     const rps = getThrowFromNumber();
 
@@ -27,7 +23,7 @@ doItButton.addEventListener('click', () => {
     const throwButton = document.querySelector('input:checked');
 
     let winCondition;
-//Show Result & Tally Score
+
     winCondition = compareThrows(throwButton, rps, winCondition);
     resultTally(winCondition);
 });
