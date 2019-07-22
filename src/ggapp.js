@@ -17,15 +17,15 @@ guessB.addEventListener('click', function(event) {
     const userGuess = parseInt(guess.value);
     const result = compareNumbers(userGuess, correctNum);
     triesLeft.textContent = triesLeftNumber;
-
+    
     if(triesLeftNumber === 0){
         res.textContent = 'Oh No!',
         res1.textContent = 'Gauss the goose has been degaussed.';
         triesLeft.textContent = triesLeftNumber;
-        lowHigh.textContent = 'There is only one path for Gauss now, down the gullet of the goosenapper';
+        lowHigh.textContent = 'There is only one path for Gauss now, down the gullet of the goosenapper. 😢';
         guessB.disabled = true;
+        return;
     }
-
     gameResult(result);
 });
 
@@ -38,13 +38,13 @@ function gameResult(result) {
     }
     else if(result === -1) {
         res.textContent = 'You haven\'t found them';
-        res1.textContent = 'This trail was a dead end,';
+        res1.textContent = 'No, this trail was a dead end,';
         triesLeft.textContent = triesLeftNumber;
         lowHigh.textContent = 'It\'s too dark to see down here.  Let\'s try higher up.';
     }
     else if(result === 1) {
         res.textContent = 'You haven\'t found them';
-        res1.textContent = 'This trail was a dead end';
+        res1.textContent = 'No, this trail was a dead end';
         triesLeft.textContent = triesLeftNumber;
         lowHigh.textContent = 'There is too much sun to hide. Let\'s try lower down.';
     }

@@ -4,12 +4,10 @@ body {font-family: Helvetica;
     text-align: center;
 }
 
-#quizRes {
-    font-size: 40px;
-}
-
 .inputGuess {
     font-size: 40px;
     height: 80px;
     width: 100px;
 }
+
+#quizRes {font-size: 40px;}

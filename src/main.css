@@ -1,31 +1,47 @@
-body {font-family: Helvetica;
+body {
+    font-family: Helvetica;
     background-color: black; 
-    color: white;}
+    color: white;
+}
 
-h1 {font-family: 'DM Serif Text', serif;;
+nav {margin: 30px;}
+
+h1 {
+    font-family: 'DM Serif Text', serif;;
     text-align: center;
-    margin: 30px;}
+    margin: 50px;
+}
 
-h2, h3 {font-family: 'DM Serif Text', serif;
-    margin: 20px;}
+h2, h3 {
+    font-family: 'DM Serif Text', serif;
+    margin: 30px;
+}
 
-p {color: lightgray;
-    margin: 10px;}
+p {
+    color: lightgray;
+    margin: 10px;
+}
 
-ol, ul, li {color: lightgray;
-    margin: 10px;}
+ol, ul, li {
+    color: lightgray;
+    margin: 10px;
+}
 
 img{margin:20px;}
 
-.resize {height: 400px;
-    width: auto;}
+.resize {
+    height: 400px;
+    width: auto;
+}
 
 .centerText {text-align: center;}
 
-.imgCenter {display: block;
+.imgCenter {
+    display: block;
     margin: 0px auto;
-height: 400;
-width: auto;}
+    height: 400;
+    width: auto;
+}
 
 .imgLeft {float: left;}
 
@@ -58,8 +74,6 @@ button {
     margin-right: auto;
     width: 50%;}
 
-.hidden {
-    display: none;}
+.hidden {display: none;}
 
-.invisible {
-    visibility: hidden;}
+.invisible {visibility: hidden;}
