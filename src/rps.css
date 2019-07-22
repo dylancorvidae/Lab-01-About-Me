@@ -1,0 +1,24 @@
+body {font-family: Helvetica;
+    background-color: black; 
+    color: white;
+    text-align: center;
+}
+
+label {cursor: pointer;}
+
+input {display: none;}
+
+.radio-image {
+    border: 5px solid transparent;
+    height: 200px;
+}
+
+.largerP{font-size: 1.5em}
+
+input:checked + .radio-image {border: 5px solid rgb(236, 28, 243);}
+
+#message {font-size: 1.25em;}
+
+#result-img{height: 200px;}
+
+#record{font-size: 2em;}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess A Number</title>
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/rps.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="centerText">Rock Paper Scissors</h1>
+        <nav>
+            <a href="./">Home</a>
+            <a href="./guess.html">Guessing Game</a>
+            <a href="./rockpaperscissors.html">Rock Paper Scissors</a>
+        </nav>
+        </header>
+    <main>
+        <h2>Instructions</h2>
+        <p class="instruct">
+            Rock > Scissors
+            <br>
+            Scissors > Paper
+            <br>
+            Paper > Rock
+            <br>
+        </p>
+        <h2>Pick Your Weapon</h2>
+        <p>
+            <label>
+                <input type="radio" name="weapon" value="rock">
+                <img class="radio-image" id="rock" src="assets/weapon/rock.png">
+            </label>
+            <label>
+                <input type="radio" name="weapon" value="paper">
+                <img class="radio-image" id="paper" src="assets/weapon/paper.png">
+            </label>
+            <label>
+                <input type="radio" name="weapon" value="scissors">
+                <img class="radio-image" id="scissors" src="assets/weapon/scissors.png">
+            </label>
+        </p>
+        <p id="message">
+                Did you choose your weapon?
+        </p>
+        <p class="larger-p invisible" id="opponent-throws">
+        Your Opponent Throws
+        </p>
+        <p id="result">
+            <img id="result-img" class="invisible" src="assets/weapon/rock.png">
+        </p>
+        
+        <p id="record">Your
+            <span>Wins: <span class="count" id="win-count">0</span></span>
+            <span>Losses: <span class="count" id="loss-count">0</span></span>
+            <span>Ties: <span class="count" id="tie-count">0</span></span>
+        </p>
+        <p>
+            <button id="do-it-button">Let's Do This!</button>
+        </p>
+    </main>
+    <footer><p>Authored by Dylan Corvidae &copy;</p></footer>
+    <script type="module" src="src/rpsapp.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess A Number</title>
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/ggapp.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="centerText">Guess Goose Gauss</h1>
+        <nav>
+            <a href="./">Home</a>
+            <a href="./guess.html">Guessing Game</a>
+            <a href="./rockpaperscissors.html">Rock Paper Scissors</a>
+        </nav>
+        </header>
+    <main>
+        <p>
+            A local JavaScript hooligan has taken Dylan's favorite goose Gauss. Dylan saw the goosenapper running away 
+            from the family pond with a sack trailing feathers behind them. Dylan chased the hooligan 
+            towards a local canyon system that has countless trails leading to different caves. You saw this person 
+            run into a particular section but didn't think much of it at the time, so you don't know which trail they 
+            took. Dylan stops to ask you if you saw which why the goosenapper went. You explain that you didn't see 
+            exactly but could help them find the general direction. Which trail do you think the hooligan followed?
+            <br><br>
+            Pick a number to try and help Dylan recover their beloved Gauss. It is currently 3 in the afternoon
+            so Dylan only has time to check 3 different caves before the local dinnertime. Help them save Gauss
+            before the goose has been degaussed! 
+        </p>
+        <p>
+            <input type="number" min="0" max="20" class="inputGuess" id="guess">
+        </p>
+        <p id="quizRes">
+                Please help Dylan save Gauss! 
+        </p>
+        <p>
+            <button id="guessButt">Let's Do This!</button>   
+        </p>
+        <p id="">
+                Did you find the goosenapper? <span id="quizRes1">You haven't tried yet.</span>
+        </p>
+        <p>
+                You have <span id="tries-left">3</span> tries left.
+        </p>
+        <p id="low-high">
+                Was the trail too high or two low?
+        </p>
+    </main>
+    <footer><p>Authored by Dylan Corvidae &copy;</p></footer>
+    <script type="module" src="src/ggapp.js"></script>
+</body>
+</html>
